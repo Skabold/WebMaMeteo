@@ -1,2 +1,2 @@
 //Mécanisme de routage :
-angular.module("myApp", ["ngRoute"]);
+angular.module("app", ["ngRoute"]);

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-    <head ng-app="myApp">
+<html ng-app="myApp">
+    <head>
         <script type="text/javascript" src="node_modules/angular/angular.js"></script>
         <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"></script>
@@ -11,20 +11,22 @@
 
         <title>Ma Meteo Index.html</title>
 
-        <nav>
-            <ul>
-                <li><a href="#!meteovilles">MeteoVilles</a></li>
-                <li><a href="#!previsions">Prevision</a></li>
-                <li><a href="#!villes">Villes</a></li>
-            </ul>
-        </nav>
-
     </head>
 
     <body>
+
+      <nav>
+        <ul>
+            <li><a href="#!meteovilles">MeteoVilles</a></li>
+            <li><a href="#!previsions">Prevision</a></li>
+            <li><a href="#!villes">Villes</a></li>
+        </ul>
+    </nav>
+
         <div ng-view></div>
 
         <script>
+          var app = angular.module("myApp", ["ngRoute]"])
             app.config(function($routeProvider) {
               $routeProvider
               .when("/", {
