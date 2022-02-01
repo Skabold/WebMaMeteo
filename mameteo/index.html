@@ -22,27 +22,7 @@
             <li><a href="#!villes">Villes</a></li>
         </ul>
     </nav>
-
-        <div ng-view></div>
-
-        <script>
-          var app = angular.module("myApp", ["ngRoute]"])
-            app.config(function($routeProvider) {
-              $routeProvider
-              .when("/", {
-                templateUrl : "/partials/meteovilles.html" //default ?
-              })
-              .when("/meteovilles", {
-                templateUrl : "/partials/meteovilles.html"
-              })
-              .when("/previsions", {
-                templateUrl : "/partials/previsions.html"
-              })
-              .when("/villes", {
-                templateUrl : "/partials/villes.html"
-              });
-            });
-            </script>            
+        <div ng-view></div>         
     </body>
 
 </html> 
