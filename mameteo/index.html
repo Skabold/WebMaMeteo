@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" />
     <script type="text/javascript" src="node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"></script>
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" />
+        
     <script src="js/app.js"></script>
+
+    <nav>
+        <ul>
+            <li><a href="#!previsions">previsions</a></li>
+            <li><a href="#!meteovilles">meteovilles</a></li>
+            <li><a href="#!villes">Villes</a></li>
+        </ul>
+    </nav>
 </head>
 <body>
-
-<p><a href="#/!">Main</a></p>
-
-<a href="#!previsions">previsions</a>
-<a href="#!meteovilles">meteovilles</a>
-<a href="#!villes">Villes</a>
 
 <div ng-view></div>
 
