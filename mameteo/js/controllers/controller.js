@@ -1,4 +1,4 @@
-angular.module('myApp', []);
-controller('meteoController', function($scope) {
+//angular.module('myApp', []);
+app.controller('meteoController', function($scope) {
     $scope.msg = "ça marche !";
   }); 
