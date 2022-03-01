@@ -8,6 +8,9 @@ app.config(function($routeProvider) {
         .when("/previsions", {
             templateUrl : "./partials/previsions.html"
         })
+        .when("/previsions/:villeId", {
+            templateUrl : "./partials/previsions.html"
+        })
         .when("/villes", {
             templateUrl : "./partials/villes.html"
         })
