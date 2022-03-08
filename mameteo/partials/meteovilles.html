@@ -18,7 +18,7 @@
                             <div class="card-content white-text">
                                 <span class="card-title">Météo : </span>
                                 <p>Ville : {{x.vil}} </p>
-                                <p>Température : {{x.tem}}</p>
+                                <p>Température : {{x.tem}} °C</p>
                                 <p>Préssion : {{x.pre}}</p>
                                 <p>Humidité : {{x.hum}}</p>
                                 <p>Vitesse du vent : {{x.vit}}</p>
@@ -31,6 +31,11 @@
                     </div>
                 </div>
             </div>
+            <form ng-submit="submit(name)">
+                <p>Input the name of the city you want to delete :  (ex : Nantes, Vannes, Paris, ...)</p>
+                <input type="text" name="name" ng-model="name" />
+                <input type="submit" value="delete">
+            </form> 
 
             
         </div>
